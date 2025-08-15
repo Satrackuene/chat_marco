@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
   exit;
 }
 
-define('SCM_VERSION', '0.2.0');
+define('SCM_VERSION', '0.2.1');
 define('SCM_PATH', plugin_dir_path(__FILE__));
 define('SCM_URL', plugin_dir_url(__FILE__));
 
