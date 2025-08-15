@@ -10,10 +10,10 @@ class Plugin
 {
   public function init(): void
   {
-    echo "inicio de plugin";
-    // Admin options page + settings
-    add_action('admin_init', [Options::class, 'register_settings']);
-    add_action('admin_menu', [Options::class, 'add_options_page']);
+    if (is_admin()) {
+      add_action('admin_init', [Options::class, 'register_settings']);
+      add_action('admin_menu', [Options::class, 'add_options_page']);
+    }
 
     // Assets
     add_action('wp_enqueue_scripts', [Assets::class, 'enqueue']);

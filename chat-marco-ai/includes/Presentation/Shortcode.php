@@ -10,7 +10,6 @@ class Shortcode
 
   public static function render(): string
   {
-    echo 1;
     ob_start(); ?>
     <div class="SCM-root">
       <button class="SCM-launcher" aria-controls="SCM-window" aria-expanded="false"

@@ -27,7 +27,6 @@ class Options
 
   public static function register_settings(): void
   {
-    echo "registro de opciones";
     register_setting('SCM_group', self::OPTION_KEY);
 
     add_settings_section('SCM_main', 'Conexiones del Chat', function () {
